@@ -92,12 +92,6 @@
     </target>
 
     <target name="run">
-        <condition property="run.lib.native" value="windows-64">
-            <os arch="amd64" family="windows" />
-        </condition>
-        <condition property="run.lib.native" value="windows">
-            <os arch="i386" family="windows" />
-        </condition>
         <condition property="run.lib.native" value="macosx">
             <os family="mac" />
         </condition>
